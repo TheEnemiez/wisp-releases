@@ -4,9 +4,7 @@
 			"version": "0.0.1-alpha.1",
 			"type": "alpha",
 			"date": "2024-12-01",
-			"features": ["working sidebar", "added playlists", "playlists customization", "playlists deletion", "a non function playlists duplication button in the context menu", "clean animtions"],
-			"bugsFixed": [],
-			"improvements": []
+			"features": ["working sidebar", "added playlists", "playlists customization", "playlists deletion", "a non function playlists duplication button in the context menu", "clean animtions"]
 		}
 	]
 }
