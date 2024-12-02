@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self';">
+    <title>Wisp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Title Bar -->
+    <div id="title-bar">
+        <div id="title-bar-left">
+            <span class="title-bar-text">Wisp</span>
+        </div>
+        <div id="title-bar-right">
+            <button id="minimize-button" class="title-bar-button">⎯</button>
+            <button id="maximize-button" class="title-bar-button">▢</button>
+            <button id="close-button" class="title-bar-button">✕</button>
+        </div>
+    </div>
+
+    <div id="app">
+        <div id="sidebar" class="hidden">
+            <div id="library-header">
+                <span>Library</span>
+                <button id="add-playlist" class="button-icon">+</button>
+
+            </div>
+            <ul id="playlist-list"></ul>
+        </div>
+
+        <!-- Search bar -->
+        <div id="search-bar">
+            <input id="search-input" type="text" placeholder="Search..." spellcheck="false">
+        </div>
+
+        <!-- Main content -->
+        <div id="main-content">
+            <div id="playlist-display">
+                <img id="playlist-icon" src="" alt="Playlist Icon" style="display: none;">
+                <h1 id="playlist-title">No Playlist Selected</h1>
+                <p id="playlist-description">Create a playlist to get started.</p>
+                <div id="button-container">
+                    <button id="edit-save-button" class="button-icon" style="display: none;">✎</button>
+                    <button id="edit-cancel-button" class="button-icon" style="display: none;">✖</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="context-menu" class="context-menu">
+            <button id="delete-playlist">Delete</button>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/windowControls.js"></script>
+    <script type="module" src="./scripts/sidebar.js"></script>
+    <script type="module" src="./scripts/playlists.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+
+</html>
